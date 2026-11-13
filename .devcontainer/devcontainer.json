@@ -12,7 +12,7 @@
   "remoteUser": "codespace",
   "containerUser": "codespace",
   "updateRemoteUserUID": false,
-  "overrideCommand": false,
+  "overrideCommand": true,
   "customizations": {
     "vscode": {
       "settings": {
