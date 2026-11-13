@@ -1,0 +1,29 @@
+{
+  "name": "Arch Linux Codespace",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "args": {
+      "INSTALL_NODE": "false",
+      "INSTALL_PYTHON": "false",
+      "INSTALL_GO": "false"
+    }
+  },
+  "remoteUser": "codespace",
+  "containerUser": "codespace",
+  "updateRemoteUserUID": false,
+  "overrideCommand": false,
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/usr/bin/zsh",
+            "icon": "terminal-linux"
+          }
+        }
+      }
+    }
+  }
+}
