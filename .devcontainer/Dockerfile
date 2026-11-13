@@ -9,7 +9,7 @@ ENV LANG=C.UTF-8 \
     SHELL=/usr/bin/zsh
 
 RUN pacman -Syu --noconfirm --needed \
-      ca-certificates curl git less openssh procps-ng sudo tar unzip which zsh \
+      ca-certificates curl git git-lfs less openssh procps-ng sudo tar unzip which zsh \
     && pacman -Scc --noconfirm
 
 RUN set -eux; \
